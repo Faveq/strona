@@ -1,5 +1,6 @@
 <template>
 <div class="w-screen">
+<Header/>
 <Nav />
 <Content />
 </div>
@@ -8,9 +9,11 @@
 <script setup lang="ts">
 import Nav from './components/Nav.vue';
 import Content from './components/Content.vue';
+import Header from './components/Header.vue';
 </script>
 
 <style scoped>
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 .nunito-sans-light {
     font-family: "Nunito Sans", sans-serif;
@@ -23,5 +26,11 @@ import Content from './components/Content.vue';
   }
 *{
     font-family: Nunito Sans;
+    overflow-x: hidden; 
+}
+@media only screen and (max-width: 1500px) {
+  * {
+    overflow-x: scroll; 
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <nav class="h-screen p-2 border-r border-solid border-accent absolute">
+  <nav class="h-screen p-3 border-r border-solid border-accent fixed pt-16">
     <div
       class="px-2 my-1.1"
       v-for="category in categories"

@@ -15,13 +15,13 @@
     <div class="flex-col graph border-solid border-accent border p-4 rounded-md overflow-hidden">
       <p class="font-bold">Total orders</p>
       <p class="text-secondary text-xs mb-7">Last 7 days</p>
-      <BarChart />
+      <BarChart class="h-[220px]"/>
     </div>
 
-    <div class="flex-col graph border-solid border-accent border p-4 rounded-md h-fit ">
+    <div class="flex-col graph border-solid border-accent border p-4 rounded-md h-fit overflow-hidden">
       <p class="font-bold">New customers</p>
       <p class="text-secondary text-xs mb-7">Last 7 days</p>
-      <LineChart class="w-min h-min"/>
+      <LineChart class="h-[220px]"/>
     </div>
   </div>
 </template>

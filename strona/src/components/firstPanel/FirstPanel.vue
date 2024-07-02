@@ -1,5 +1,5 @@
 <template>
-  <div class="flex p-10 border-solid border-accent border relative">
+  <div class="flex content p-10 border-solid border-accent border relative">
     <div class="w-1/2">
       <p class="text-3xl font-extrabold">Ecommerce Dashboard</p>
       <p class="text-secondary">
@@ -29,7 +29,7 @@
       <div class="flex-col">
         <p class="font-extrabold text-xl">Total sells</p>
         <p class="text-secondary">Payment received across all channels</p>
-        <Chart />
+        <Chart class="w-full"/>
       </div>
     </div>
     <ChartsGroup class="w-1/2" />
@@ -43,4 +43,18 @@ import { Star, Pause, X } from "lucide-vue-next";
 import ChartsGroup from "./ChartsGroup.vue";
 </script>
 
-<style scoped></style>
+<style scoped>
+.content {
+  margin: 0px !important;
+}
+@media only screen and (max-width: 1500px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    margin-left: 0px;
+    padding: 2rem;
+  }
+}
+</style>
